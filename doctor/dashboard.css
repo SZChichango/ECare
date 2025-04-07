@@ -1,0 +1,104 @@
+/** @format */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+section.grid-item {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.grid-item h2 {
+  padding: 1em;
+}
+
+.profile-info .profile-pic {
+  width: 100%;
+}
+
+#appointments h2 {
+  margin-bottom: 1rem;
+}
+
+.appointment {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  background-color: #cdcccc;
+  padding: 0.5em 1em;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-time {
+  display: flex;
+  gap: 1em;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.profile {
+  display: flex;
+  width: 100%;
+  gap: 2em;
+}
+
+.profile img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}

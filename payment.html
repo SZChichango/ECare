@@ -1,0 +1,81 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECare - Payment</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Add your CSS file here -->
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Payment Consultation</h1>
+        <section id="consultation-packages">
+          <h2>Consultation Packages</h2>
+          <div class="package">
+            <h3>Standard Consultation</h3>
+            <p>
+              Description: Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit.
+            </p>
+            <p>Price: $50</p>
+            <button onclick="selectPackage('Standard Consultation')">
+              Select
+            </button>
+          </div>
+          <div class="package">
+            <h3>Premium Consultation</h3>
+            <p>
+              Description: Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit.
+            </p>
+            <p>Price: $100</p>
+            <button onclick="selectPackage('Premium Consultation')">
+              Select
+            </button>
+          </div>
+          <!-- Add more consultation packages as needed -->
+        </section>
+
+        <section id="payment-details">
+          <h2>Payment Details</h2>
+          <form action="process_payment.php" method="POST">
+            <div class="form-field">
+              <label for="card-number">Card Number:</label>
+              <input type="text" id="card-number" name="card-number" required />
+            </div>
+            <div class="form-field">
+              <label for="expiry-date">Expiry Date:</label>
+              <input
+                type="text"
+                id="expiry-date"
+                name="expiry-date"
+                placeholder="MM/YYYY"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <label for="cvv">CVV:</label>
+              <input type="text" id="cvv" name="cvv" required />
+            </div>
+            <button type="submit">Pay Now</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 ECare. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function selectPackage(packageName) {
+        // You can implement JavaScript logic here to handle the selected package
+        console.log("Selected Package:", packageName);
+      }
+    </script>
+  </body>
+</html>

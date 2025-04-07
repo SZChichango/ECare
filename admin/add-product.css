@@ -1,0 +1,23 @@
+/** @format */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main section {
+  max-width: 500px;
+  width: 100%;
+}

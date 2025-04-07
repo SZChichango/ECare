@@ -1,0 +1,114 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Add your CSS file here -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+      }
+      header h1 {
+        margin: 0;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      main {
+        padding: 20px;
+      }
+      section {
+        margin-bottom: 30px;
+      }
+      .stats {
+        display: flex;
+        justify-content: space-between;
+      }
+      .stat-box {
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        padding: 20px;
+        flex-basis: calc(33.33% - 20px);
+        text-align: center;
+      }
+      .recent-activity ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      .recent-activity ul li {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Admin Panel</h1>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="users.html">Users</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+          <!-- Add more navigation links as needed -->
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="dashboard">
+        <h2>Dashboard</h2>
+        <div class="stats">
+          <div class="stat-box">
+            <h3>Total Users</h3>
+            <p>150</p>
+          </div>
+          <div class="stat-box">
+            <h3>Total Doctors</h3>
+            <p>25</p>
+          </div>
+          <div class="stat-box">
+            <h3>Total Appointments</h3>
+            <p>300</p>
+          </div>
+          <!-- Add more stat boxes as needed -->
+        </div>
+        <div class="recent-activity">
+          <h3>Recent Activity</h3>
+          <ul>
+            <li>User John Doe registered</li>
+            <li>Doctor Jane Smith added a new appointment</li>
+            <li>User Alice Johnson updated her profile</li>
+            <!-- Add more recent activities as needed -->
+          </ul>
+        </div>
+      </section>
+
+      <!-- Other sections for managing users, doctors, appointments, etc. -->
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Admin Panel. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

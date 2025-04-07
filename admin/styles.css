@@ -1,0 +1,149 @@
+/** @format */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+header h1 {
+  margin: 0;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+main {
+  padding: 20px;
+}
+section {
+  margin-bottom: 30px;
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+.stat-box {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 20px;
+  flex-basis: calc(33.33% - 20px);
+  text-align: center;
+}
+.recent-activity ul {
+  list-style-type: none;
+  padding: 0;
+}
+.recent-activity ul li {
+  margin-bottom: 10px;
+}
+
+a.add-product {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a.add-product:hover {
+  background-color: #444;
+}
+
+/* Table */
+table {
+  margin-top: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(94, 94, 94);
+  color: white;
+}
+
+table tr a {
+  color: #333;
+  text-decoration: none;
+}
+
+table tr a:hover {
+  color: #666;
+}
+
+/* Login page */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.login {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.login h2 {
+  margin-bottom: 1em;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  bottom: 0;
+}
+
+.profile {
+  display: flex;
+  width: 100%;
+  gap: 2em;
+}
+
+.profile img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}

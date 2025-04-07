@@ -1,0 +1,83 @@
+/** @format */
+
+h2 {
+  text-align: center;
+}
+
+.doctor-selection {
+  padding: 1em;
+  background-color: var(--color-neutral-light-grayish-blue);
+}
+
+.doctor-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 4em;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+
+.doctor-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  cursor: pointer;
+}
+
+.doctor-card:hover {
+  background-color: var(--color-primary-dark-blue);
+  color: var(--color-neutral-white);
+  transition: all 250ms ease-in-out;
+}
+
+.doctor-card img {
+  width: 75px;
+}
+
+.appointment-form {
+  display: flex;
+  padding: 2em;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+}
+
+.appointment-form form {
+  max-width: 800px;
+  width: 100%;
+}
+
+.doctor-selection {
+  width: 100%;
+}
+
+.filter {
+  margin-top: 1em;
+  display: flex;
+  gap: 1em;
+}
+
+.filter input {
+  max-width: 500px;
+  width: 100%;
+}
+
+.date-time {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+#card-payment,
+#medical-aid {
+  width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+  .appointment-form {
+    flex-direction: column;
+  }
+}
